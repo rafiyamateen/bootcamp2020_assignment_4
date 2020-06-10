@@ -8,10 +8,10 @@ function App() {
   return (
     <div className={`counter ${darkMode ? 'dark' : ''}`}>
       <h1>{darkMode ? 'Dark' : 'Light'} Mode</h1>
-      <button onClick={()=>setMode(!darkMode)}>Change mode</button>
+      <button className={`${darkMode ? 'dark-btn' : ''}`} onClick={()=>setMode(!darkMode)}>Change mode</button>
     <Counter value={count} />
-    <button onClick={() => setCount(--count)}>Decrease</button>
-    <button onClick={() => setCount(++count)}>Increase</button>
+    <button className={`${darkMode ? 'dark-btn' : ''}`} onClick={() => setCount(--count)}>Decrease</button>
+    <button className={`${darkMode ? 'dark-btn' : ''}`} onClick={() => setCount(++count)}>Increase</button>
     </div >
   );
 }

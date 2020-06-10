@@ -4,11 +4,14 @@
 }
 .dark{
   background-color: black;
-color: white;
+  color: white;
 }
 button{
   font-size: 20px;
   padding: 5px;
   margin: 0px 5px;
-  box-shadow: 2px 2px 6px rgb(95, 94, 94);
+  box-shadow: -2px -2px 6px black;
+}
+.dark-btn{
+  box-shadow: -2px -2px 6px wheat;
 }
